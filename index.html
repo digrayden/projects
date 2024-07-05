@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time and Stopwatch</title>
+    <link rel="stylesheet" href="css/style.css"></link>
+    <script src="js/code.js"></script>
+</head>
+<body>
+    <div class="tabs">
+        <span class="tab active" data-tab="clock">Точное время</span>
+        <span class="tab" data-tab="stopwatch">Секундомер</span>
+      </div>
+    
+      <div id="clock" class="content active">
+        <div id="timezone"></div>
+        <div class="time">:</div>
+        <div class="city-buttons">
+          <button class="active" data-city="Минск" data-offset="3">Минск</button>
+          <button data-city="Токио" data-offset="9">Токио</button>
+          <button data-city="Пекин" data-offset="8">Пекин</button>
+          <button data-city="Буэнос-Айрес" data-offset="-3">Буэнос-Айрес</button>
+          <button data-city="Нью-Йорк" data-offset="-5">Нью-Йорк</button>
+          <button data-city="Лондон" data-offset="0">Лондон</button>
+        </div>
+        <img id="city-image">
+      </div>
+    
+      <div id="stopwatch" class="content">
+        <div class="stopwatch">00:00:00</div>
+        <button id="stopwatch-button">Пуск</button>
+      </div>
+</body>
+</html>

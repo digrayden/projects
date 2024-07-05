@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+ }
+
+.tabs{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.tab{
+    padding: 10px;
+    margin-top: 10px;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: center;
+    color: rgba(255, 253, 253, 1);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px 5px 0px 0px;
+    background: rgb(127, 127, 139);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab.active {
+    color: rgba(255, 0, 0, 1);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 16.94px;
+    text-align: center;
+    border: 3px solid rgba(189, 189, 189, 1);
+    width: 300px;
+    height: 60px;
+    border-radius: 5px 5px 0px 0px;
+    background: rgb(228, 228, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    height: 70%;
+    border: 3px solid rgba(189, 189, 189, 1);
+    background: rgb(228, 228, 228);
+    display: none;
+    padding: 10px;
+    margin-top: 0;
+}
+
+.content.active {
+    width: 60%;
+    height: 70%;
+    border: 3px solid rgba(189, 189, 189, 1);
+    background: rgb(228, 228, 228);  
+    padding: 10px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#timezone{
+    font-family: Inter;
+    font-size: 35px;
+    font-style: italic;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    color: rgba(77, 105, 205, 1);
+}
+
+#clock{
+    color:  rgba(0, 0, 0, 1);
+    font-family: Inter;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 87.14px;
+    letter-spacing: 0.06em;
+    text-align: left;
+}
+
+.city-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city-buttons button {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(255, 253, 253, 1);
+    background: rgba(77, 105, 205, 1);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+button.active {
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 21.78px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(255, 253, 253, 1);
+    background: rgba(255, 0, 0, 1);
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+img {
+    background-blend-mode: darken;
+    width: 320px;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.stopwatch {
+    color:  rgba(0, 0, 0, 1);
+    font-family: Inter;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 87.14px;
+    letter-spacing: 0.06em;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#stopwatch-button{
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    border: 3px solid rgba(255, 253, 253, 1);
+    background: rgba(77, 105, 205, 1);
+    width: 300px;
+    height: 80px;
+    border-radius: 10px;
+}
